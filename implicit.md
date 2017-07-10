@@ -1,9 +1,9 @@
 Tip: If your app has server side, we recommend you to chose [authorization code grant type](authorization-code.html).
 
-### __1. Getting Access Token__
-#### __Request URL：__ &emsp; `https://account.xiaomi.com/oauth2/authorize`
-#### __Request Method：__ &emsp; GET
-#### __Request Data：__
+### 1. Getting Access Token
+##### request url: &emsp; `https://account.xiaomi.com/oauth2/authorize`
+##### request method: &emsp; GET
+##### request params:
 
 name | required | type | description
 ---|--- | --- | ---
@@ -14,7 +14,7 @@ scope | optional | string | data required for getting scope permissions, multipl
 state | optional | string | used for maintaining correspondence with request and callback, given to a third party after the request is successful, used for preventing CSRF attacks, and strongly recommended for use by third parties
 skip_confirm | optional | boolean | the signed in user will see a page for switching accounts, if this is not required by the app, you can add `skip_confirm=true`, __Yellow Pages app should be set as true__
 
-#### __Response Data：__
+##### response data:
 
 - __SUCCESS__
 
@@ -24,12 +24,12 @@ Once permission request is successful, the server will give the user’s browser
 http://example.com/example#access_token=TOKEN&token_type=mac&expires_in=7776000&mac_algorithm=HmacSHA1&mac_key=MACKEY&scope=SCOPE
 ```
 
-__Response Data Details：__
+__response data detail：__
 
 name | required | type | description
 ---|--- | --- | ---
 access_token | yes | string | required access token
-expires_in | yes | string | validity period of access token in seconds, see [Access Token Life Cycle](token-life-cycle.html)
+expires_in | yes | string | validity period of access token in seconds, see [Token Life Cycle](token-life-cycle.html)
 scope | yes | string | scope of access token, see ​[scope permissions​ list](scope-list.html)
 mac_key | yes | string | MAC key required for interactions between HTTP and Open API, validity period same as that of access token
 mac_algorithm | yes | string | Algorithm used for for interactions between HTTP and Open API and digital signatures, currently supports `HmacSha1`

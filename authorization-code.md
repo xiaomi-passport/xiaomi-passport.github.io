@@ -1,8 +1,8 @@
-### __1. Getting Authorization Code__
+### 1. Getting Authorization Code
 
-#### Request URL： &emsp; `https://account.xiaomi.com/oauth2/authorize`
-#### __Request Method：__ &emsp; GET
-#### __Request Data：__
+##### request utl: &emsp; `https://account.xiaomi.com/oauth2/authorize`
+##### request method: &emsp; GET
+##### request params:
 
 name | required | type | description
 ---|--- | --- | ---
@@ -13,7 +13,7 @@ scope | optional | string | data required for getting scope permissions, multipl
 state | optional | string | used for maintaining correspondence with request and callback, given to a third party after the request is successful, used for preventing CSRF attacks, and strongly recommended for use by third parties
 skip_confirm | optional | boolean | the signed in user will see a page for switching accounts, if this is not required by the app, you can add `skip_confirm=true`, __Yellow Pages app should be set as true__
 
-#### __Response Data：__
+##### response data:
 
 - __SUCCESS__
 
@@ -23,7 +23,7 @@ Once permission request is successful, the server will give the user’s browser
 http://example.com/example?code=CODE&state=STATE
 ```
 
-__Response Data Details：__
+__response data detail:__
 
 name | required | type | description
 --- | --- | --- | ---
@@ -38,19 +38,19 @@ Once permission request is unsuccessful, the server will give the user’s brows
 http://example.com/example?error=ERROR&error_description=ERROR_DESCRIPTION&state=STATE
 ```
 
-__Response Data Details：__
+__response data detail:__
 
 name | required | type | description
 --- | --- | --- | ---
-error | yes | int | [oauth error code list](error-code/)
+error | yes | int | [oauth error code list](error-code.html)
 error_description | yes | string | simple error description
 state | optional | string | if the data is passed during the request, the same data will be returned
 
-### __2. Getting Access Token__
+### 2. Getting Access Token
 
-#### __Request URL：__ &emsp; `https://account.xiaomi.com/oauth2/token`
-#### __Request Method：__ &emsp; GET
-#### __Request Data：__
+##### request url:__ &emsp; `https://account.xiaomi.com/oauth2/token`
+##### request method: &emsp; GET
+##### request params:
 
 name | required | type | description
 ---|--- | --- | ---
@@ -60,16 +60,16 @@ client_secret | yes | string | allocated APP Secret during app request
 grant_type | yes | string | grant_type is fixed as authorization_code
 code | yes | string | Authorization Code acquired in the step above
 
-#### __Response Data：__
+##### response data:
 
 - __SUCCESS__
 
 Once the request is accepted, the server will return strings in json format:
 
 1. access_token: access token required to obtain
-2. expires_in: access token’s validity period in seconds, see [Access Token Life Cycle](access-token-life-cycle/)
+2. expires_in: access token’s validity period in seconds, see [Token Life Cycle](token-life-cycle.html)
 3. refresh_token: refresh token, all apps return this data (valid for 10 years)
-4. scope: scope of access token, see [scope permission​ list](scopes/)
+4. scope: scope of access token, see [scope permission​ list](scope-list.html)
 5. mac_key: MAC key required for interactions between HTTP and Open API, validity period same as that of access token
 6. mac_algorithm: algorithm used for for interactions between HTTP and Open API and digital signatures, currently supports `HmacSha1`
 7. openId: user’s openId, can be stored by the website or app for verifying the user when they sign in next time

@@ -1,15 +1,15 @@
-### __1. Getting User's Profile__
-#### __Request URL：__ &emsp; `https://open.account.xiaomi.com/user/profile`
-#### __Request Method：__ &emsp; GET
-#### __Request Scope：__ &emsp; 1
-#### __Request Data：__
+### 1. Getting User's Profile
+##### request url: &emsp; `https://open.account.xiaomi.com/user/profile`
+##### request method: &emsp; GET
+##### request scope: &emsp; 1
+##### request params:
 
 name | required | type | description
 ---|--- | --- | ---
 clientId | yes | long | allocated ​APP ID​ during app requests
 token | yes | string | access token received by client, after the user gives access
 
-#### __Response Data：__
+##### response data:
 
 - __SUCCESS__
 
@@ -36,18 +36,18 @@ token | yes | string | access token received by client, after the user gives acc
 }
 ```
 
-### __2. Getting User's OpenId__
-#### __Request URL：__ &emsp; `https://open.account.xiaomi.com/user/openidV2`
-#### __Request Method：__ &emsp; GET
-#### __Request Scope：__ &emsp; 3
-#### __Request Data：__
+### 2. Getting User's OpenId
+##### request url: &emsp; `https://open.account.xiaomi.com/user/openidV2`
+##### request method: &emsp; GET
+##### request scope: &emsp; 3
+##### request params:
 
 name | required | type | description
 ---|--- | --- | ---
 clientId | yes | long | allocated ​APP ID​ during app requests
 token | yes | string | access token received by client, after the user gives access
 
-##### __Response Data：__
+###### response data:
 
 - __SUCCESS__
 
@@ -72,18 +72,18 @@ token | yes | string | access token received by client, after the user gives acc
 }
 ```
 
-### __3. Getting User's Phone Number and Email Address__
-#### __Request URL：__ &emsp; `https://open.account.xiaomi.com/user/phoneAndEmail`
-#### __Request Method：__ &emsp; GET
-#### __Request Scope：__ &emsp; 4 and 6
-#### __Request Data：__
+### 3. Getting User's Phone Number and Email Address
+##### request url: &emsp; `https://open.account.xiaomi.com/user/phoneAndEmail`
+##### request method: &emsp; GET
+##### request scope: &emsp; 4 and 6
+##### request params:
 
 name | required | type | description
 ---|--- | --- | ---
 clientId | yes | long | allocated ​APP ID​ during app requests
 token | yes | string | access token received by client, after the user gives access
 
-##### __Response Data：__
+###### response data:
 
 - __SUCCESS__
 
@@ -109,18 +109,18 @@ token | yes | string | access token received by client, after the user gives acc
 }
 ```
 
-### __4. Get User's MiChat Friend List__
-##### __Request URL：__ &emsp; `https://open.account.xiaomi.com/user/relation`
-##### __Request Method：__ &emsp; GET
-##### __Request Scope：__ &emsp; 2
-##### __Request Data：__
+### 4. Get User's MiChat Friend List
+###### request url: &emsp; `https://open.account.xiaomi.com/user/relation`
+###### request method: &emsp; GET
+###### request scope: &emsp; 2
+###### request params:
 
 name | required | type | description
 ---|--- | --- | ---
 clientId | yes | long | allocated ​APP ID​ during app requests
 token | yes | string | access token received by client, after the user gives access
 
-##### __Response Data：__
+###### response data:
 
 - __SUCCESS__
 
@@ -144,12 +144,11 @@ token | yes | string | access token received by client, after the user gives acc
    "code": "error code"
 }
 ```
-<br/>
 
-### __5. Verificate User's Password__
-#### __Request URL：__ &emsp; `https://open.account.xiaomi.com/checkPassword`
-#### __Request Method：__ &emsp; GET
-#### __Request Data：__
+### 5. Verificate User's Password
+##### request url: &emsp; `https://open.account.xiaomi.com/checkPassword`
+##### request method: &emsp; GET
+##### request params:
 
 name | required | type | description
 ---|--- | --- | ---
@@ -157,7 +156,7 @@ clientId | yes | long | allocated ​APP ID​ during app requests
 xmUserId | yes | long | user id, acquired through `user/profile`
 callback | yes | string | full url which starts with http or https and is in the same domain as the redirect url, for notifying about password verification results get request type must be used
 
-#### __Response Data：__
+##### response data:
 If the request was successful, the server will send a callback to the user’s browser and add `xmResult`， `_xmNonce`, `_xmSign`, `code`, `xmUserId`, etc.
 
 name | type | description
