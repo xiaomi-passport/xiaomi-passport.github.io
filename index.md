@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+## XiaoMi Account Service Quick Start
 
-You can use the [editor on GitHub](https://github.com/xiaomi-passport/xiaomi-passport.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Xiaomi account service is based on [oauth2.0](https://tools.ietf.org/html/rfc6749) protocol， you can access service by following steps:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 1. Sign up to be a developer
 
-### Markdown
+Before accessing the xiaomi account service, you need to register as a developer, go to [xiaomi open platform](https://dev.mi.com) to register, and fill in the necessary information, and then wait for our staff review.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 2. Create your own app
 
-```markdown
-Syntax highlighted code block
+After registering as a developer, you can go to [xiaomi open platform](https://dev.mi.com), select app type and create your app, and fill in the necessary application information.
 
-# Header 1
-## Header 2
-### Header 3
+### 3. Activate account services
 
-- Bulleted
-- List
+You should go to account service management page and click "Use" button to enable xiaomi account service. Meanwhile, you should config the app with some right redirect url.
 
-1. Numbered
-2. List
+### 4. Document List
 
-**Bold** and _Italic_ and `Code` text
+#### 4.1 Beginner's guide
 
-[Link](url) and ![Image](src)
-```
+- sdk download
+- xiaomi logo download
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### 4.2 Grant permissions API
 
-### Jekyll Themes
+- Authorization code grant type
+- Implicit grant type
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xiaomi-passport/xiaomi-passport.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### 4.3 Open API
 
-### Support or Contact
+- Account open data API
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### 4.4 Others
+
+- Scope permission list
+- Error Code List
+- Token lift cycle
+
+If you have any problem, you can contact with us by email: [xiaomi-account-dev@xiaomi.com](mailto://xiaomi-account-dev@xiaomi.com).
