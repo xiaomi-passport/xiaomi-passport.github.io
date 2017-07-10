@@ -1,7 +1,7 @@
 ### 1. Refresh access token by refresh token
-#### Request URL： &emsp; `https://account.xiaomi.com/oauth2/token`
-#### Request Method： &emsp; GET
-#### Request Data：
+##### request url &emsp;`https://account.xiaomi.com/oauth2/token`
+##### request method： &emsp;GET
+##### request params
 
 name | required | type | description
 ---|--- | --- | ---
@@ -11,7 +11,7 @@ client_secret | yes | string | allocated APP Secret during app request
 grant_type | yes | string | grant_type = refresh_token
 refresh_token | yes | string | issued by server when request authorization by authorization code model
 
-#### Response Data：
+##### response data
 
 - __SUCCESS__
 

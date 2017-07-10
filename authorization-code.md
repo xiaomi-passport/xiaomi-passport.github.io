@@ -1,6 +1,6 @@
 ### __1. Getting Authorization Code__
 
-#### __Request URL：__ &emsp; `https://account.xiaomi.com/oauth2/authorize`
+#### Request URL： &emsp; `https://account.xiaomi.com/oauth2/authorize`
 #### __Request Method：__ &emsp; GET
 #### __Request Data：__
 

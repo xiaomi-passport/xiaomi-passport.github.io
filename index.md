@@ -25,7 +25,7 @@ You should go to account service management page and click "Use" button to enabl
 
 - [Authorization code grant type](authorization-code.html)
 - [Implicit grant type](implicit.html)
-- [Refresh access token](update-access-token.html)
+- [Refresh access token](refresh-access-token.html)
 
 #### 4.3 Open API
 
