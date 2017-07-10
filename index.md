@@ -18,7 +18,7 @@ You should go to account service management page and click "Use" button to enabl
 
 #### 4.1 Beginner's guide
 
-- sdk download
+- [sdk download](sdk.html)
 - xiaomi logo download
 
 #### 4.2 Grant permissions API
