@@ -19,21 +19,22 @@ You should go to account service management page and click "Use" button to enabl
 #### 4.1 Beginner's guide
 
 - [sdk download](sdk.html)
-- xiaomi logo download
+- [xiaomi logo download](file/mi_logo.zip)
 
 #### 4.2 Grant permissions API
 
-- Authorization code grant type
-- Implicit grant type
+- [Authorization code grant type](authorization-code.html)
+- [Implicit grant type](implicit.html)
+- [Refresh access token](update-access-token.html)
 
 #### 4.3 Open API
 
-- Account open data API
+- [Account open data API](open-api.html)
 
 #### 4.4 Others
 
-- Scope permission list
-- Error Code List
-- Token lift cycle
+- [Scope list](scope-list.html)
+- [Error code list](error-code.html)
+- [Token lift cycle](token-life-cycle)
 
 If you have any problem, you can contact with us by email: [xiaomi-account-dev@xiaomi.com](mailto://xiaomi-account-dev@xiaomi.com).
