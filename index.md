@@ -20,6 +20,7 @@ You should go to account service management page and click "Use" button to enabl
 
 - [sdk download](sdk.html)
 - [xiaomi logo download](file/mi_logo.zip)
+- [Contextual Sign-in with Mi Account](contextual-login.html)
 
 #### 4.2 Grant permissions API
 
@@ -37,5 +38,6 @@ You should go to account service management page and click "Use" button to enabl
 - [Error code list](error-code.html)
 - [Token lift cycle](token-life-cycle.html)
 - [MAC Signature Verification](mac-signature-verification.html)
+- [FAQs](faq.md)
 
 If you have any problem, you can contact with us by email: [xiaomi-account-dev@xiaomi.com](mailto://xiaomi-account-dev@xiaomi.com).
