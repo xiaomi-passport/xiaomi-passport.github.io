@@ -1,4 +1,6 @@
-Tip: If your app has server side, we recommend you to chose [authorization code grant type](authorization-code.html).
+## Implicit Grant Type
+
+__Attention__: Implicit grant is applicable for apps without servers, if your app has a server, it's recommended to use [authorization code grant type](authorization-code.html).
 
 ### 1. Getting Access Token
 ##### request url: &emsp; `https://account.xiaomi.com/oauth2/authorize`
@@ -20,7 +22,7 @@ skip_confirm | optional | boolean | the signed in user will see a page for switc
 
 Once permission request is successful, the server will give the user’s browser a redirect url with `access_token`, `token_type`, `expires_in`, `mac_algorithm`, `mac_key`, `state`, etc.:
 
-```json
+```http
 http://example.com/example#access_token=TOKEN&token_type=mac&expires_in=7776000&mac_algorithm=HmacSHA1&mac_key=MACKEY&scope=SCOPE
 ```
 
@@ -39,7 +41,7 @@ state | optional | string | If the data is passed during the request, the same d
 
 Once permission request is unsuccessful, the server will give the user’s browser a redirect url with `error`, `error_description`, `state`, etc.:
 
-```json
+```http
 http://example.com/example?error=ERROR&error_description=ERROR_DESCRIPTION&state=STATE
 ```
 

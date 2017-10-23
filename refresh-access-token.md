@@ -1,4 +1,4 @@
-## Refresh access token
+## Refresh Access Token
 
 __Attention__: A refresh token can only refresh the access token once, and we will issue a new refresh token after issuing new access token.
 
@@ -48,8 +48,8 @@ __NOTE：__ `&&&​START​&&&`  can be deleted directly, preferably via `replac
 
 Once the request is denied, the server will return strings in json format:
 
-1. error：error code, int number, see ​[oauth error code list](error-code.html)
-2. error_description：text describe the error
+1. __error__：error code, int number, see ​[oauth error code list](error-code.html)
+2. __error_description__：text describe the error
 
 ```json
 &&&START&&&{

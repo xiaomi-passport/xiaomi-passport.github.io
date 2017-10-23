@@ -1,3 +1,5 @@
+## OAuth Error Code List
+
 | __Error Code__ | __Error Message__ | __Description__ |
 |:--------------------|:--------------------|:--------------------|
 |96001| OA_CLIENT_NOT_EXISTS | client doesn’t exist, or account services not enabled |

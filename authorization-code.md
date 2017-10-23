@@ -1,3 +1,5 @@
+## Authorization Code Grant Type
+
 ### 1. Getting Authorization Code
 
 ##### request utl: &emsp; `https://account.xiaomi.com/oauth2/authorize`
@@ -66,13 +68,13 @@ code | yes | string | Authorization Code acquired in the step above
 
 Once the request is accepted, the server will return strings in json format:
 
-1. access_token: access token required to obtain
-2. expires_in: access token’s validity period in seconds, see [Token Life Cycle](token-life-cycle.html)
-3. refresh_token: refresh token, all apps return this data (valid for 10 years)
-4. scope: scope of access token, see [scope permission​ list](scope-list.html)
-5. mac_key: MAC key required for interactions between HTTP and Open API, validity period same as that of access token
-6. mac_algorithm: algorithm used for for interactions between HTTP and Open API and digital signatures, currently supports `HmacSha1`
-7. openId: user’s openId, can be stored by the website or app for verifying the user when they sign in next time
+1. __access_token__: access token required to obtain
+2. __expires_in__: access token’s validity period in seconds, see [Token Life Cycle](token-life-cycle.html)
+3. __refresh_token__: refresh token, all apps return this data (valid for 10 years)
+4. __scope__: scope of access token, see [scope permission​ list](scope-list.html)
+5. __mac_key__: MAC key required for interactions between HTTP and Open API, validity period same as that of access token
+6. __mac_algorithm__: algorithm used for for interactions between HTTP and Open API and digital signatures, currently supports `HmacSha1`
+7. __openId__: user’s openId, can be stored by the website or app for verifying the user when they sign in next time
 
 ```json
 &&&START&&& {
@@ -93,8 +95,8 @@ __NOTE：__ `&&&​START​&&&`  can be deleted directly, preferably via`replace
 
 Once the request is denied, the server will return strings in json format:
 
-1. error：error code, int number, see ​[oauth error code list](error-code.html)
-2. error_description：text describe the error
+1. __error__：error code, int number, see ​[oauth error code list](error-code.html)
+2. __error_description__：text describe the error
 
 ```json
 &&&START&&&{
