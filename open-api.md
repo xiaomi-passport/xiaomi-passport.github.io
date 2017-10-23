@@ -1,3 +1,5 @@
+## Xiaomi Open API
+
 ### 1. Getting User's Profile
 ##### request url: &emsp; `https://open.account.xiaomi.com/user/profile`
 ##### request method: &emsp; GET
@@ -157,6 +159,7 @@ xmUserId | yes | long | user id, acquired through `user/profile`
 callback | yes | string | full url which starts with http or https and is in the same domain as the redirect url, for notifying about password verification results get request type must be used
 
 ##### response data:
+
 If the request was successful, the server will send a callback to the user’s browser and add `xmResult`， `_xmNonce`, `_xmSign`, `code`, `xmUserId`, etc.
 
 name | type | description
@@ -166,6 +169,5 @@ xmResult | boolean | true: verification successful, false or no data: verificati
 \_xmSign | string | response to make sure it wasn’t altered
 code | string | new authorization code which can be used by third party for replacing access token (in places with higher security standards access token can be used again to get user id)
 xmUserId | long | actual account verified by Xiaomi (not always coming from a third party), may be maliciously tamper with
-
 
 __NOTE：__ Third parties must verify `_xmSign` which comes in callback, otherwise responsibility for any loss or damage will be borne by the respective third parties.
