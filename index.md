@@ -36,6 +36,6 @@ You should go to account service management page and click "Use" button to enabl
 - [Scope list](scope-list.html)
 - [Error code list](error-code.html)
 - [Token lift cycle](token-life-cycle.html)
-- [MAC Signature Verification](MAC Signature Verification.html)
+- [MAC Signature Verification](mac-signature-verification.html)
 
 If you have any problem, you can contact with us by email: [xiaomi-account-dev@xiaomi.com](mailto://xiaomi-account-dev@xiaomi.com).
