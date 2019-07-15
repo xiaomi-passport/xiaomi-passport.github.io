@@ -21,7 +21,7 @@ token | yes | string | access token received by client, after the user gives acc
   "description": "success",
   "data": {
             "miliaoNick": "xiaomi user nickname",
-            "userId": "xiaomi user id",
+            "unionId": "xiaomi user uniquely identify within all of your APP scope",
             "miliaoIcon": "profile pic url (several resolutions)"
            },
   "code": 0
