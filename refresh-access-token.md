@@ -5,6 +5,7 @@ __Attention__: A refresh token can only refresh the access token once, and we wi
 ### 1. Refresh access token by refresh token
 ##### request url: &emsp;`https://account.xiaomi.com/oauth2/token`
 ##### request method: &emsp;GET
+##### Request rate limiting: 5000/seconeds
 ##### request params:
 
 name | required | type | description
