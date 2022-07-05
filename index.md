@@ -56,7 +56,7 @@ Compared to the implicit grant, the authorization code grant needs 1 more reques
 
 ### 4. How to get help?
 
-If you have any problems, send an email to [xiaomi-account-dev@xiaomi.com](mailto://xiaomi-account-dev@xiaomi.com) for help, or apply to join the QQ group: 428371509.
+If you have any problems, send an email to [xiaomi-account-dev@xiaomi.com](mailto://xiaomi-account-dev@xiaomi.com) for help.
 
 __Attention__:
 
